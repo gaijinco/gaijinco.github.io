@@ -84,3 +84,8 @@ La manera recomendada para llevar el Bootcamp es:
    El problema de la IA generativa es que el participante pida que la IA escriba el código, pero preguntar por un error de compilación o por un error de implementación puede ayudar con las 2 situaciones anteriores.
    Se recomienda a los participantes que si definitivamente no saben como comenzar, pueden preguntar a la IA, copiar el código verlo funcionar y eliminarlo inmediatamente para que el participante intente escribirlo. Si el participante se encuentra estancado una vez más, puede ver la respuesta nuevamente. Una vez que compruebe que funciona, volver a eliminarlo. La idea es que el participante no continúe hasta que sea capaz de escribir el código sin leer la respuesta.
 7. las sesiones pueden ser virtuales, pero se recomienza al menos hacer 3 sesiones presenciales: la sesión inicial para hablar de la metodología del Bootcamp y la instalación de Java, una sesión intermedia probablemente para ayudarles a instalar un IDE y la sesión de cierre del Bootcamp. Esto ayuda a que el grupo se sienta un poco más cercano.
+
+## Material
+
+* [Materual Escrito] (https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
+* [Material en Video] (https://www.youtube.com/watch?v=p3pKNBp0uZs&list=PLnoPakspmPo7ewFioN-CWY2weX7Djuhdy)
