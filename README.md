@@ -87,5 +87,5 @@ La manera recomendada para llevar el Bootcamp es:
 
 ## Material
 
-* [Materual Escrito] (https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
-* [Material en Video] (https://www.youtube.com/watch?v=p3pKNBp0uZs&list=PLnoPakspmPo7ewFioN-CWY2weX7Djuhdy)
+* [Materual Escrito](https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
+* [Material en Video](https://www.youtube.com/watch?v=p3pKNBp0uZs&list=PLnoPakspmPo7ewFioN-CWY2weX7Djuhdy)
