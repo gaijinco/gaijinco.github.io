@@ -31,23 +31,23 @@ El orden de los temas fue escogido cuidadosamente para cumplir con ciertos objet
 
 El índice de temas es:
 
-1 Programación Funcional
-1.1 Funciones
-1.2 Operadores
-1.3 Variables
-1.4 String y StringBuilder
-1.5 Programas en Java
-1.6 Pruebas Unitarias
-1.7 Ciclos
-1.8 Condicionales
-1.9 Arreglos y Arreglos Multidimensionales
+Programación Funcional
+1. Funciones
+2. Operadores
+3. Variables
+4. String y StringBuilder
+5. Programas en Java
+6. Pruebas Unitarias
+7. Ciclos
+8. Condicionales
+9. Arreglos y Arreglos Multidimensionales
 
-2 Programación Orientada por Objetos
-2.1 Tipos de Datos
-2.2 Constructores
-2.3 Referencias y NULL
-2.4 Enums
-2.5 Inmutabilidad
+Programación Orientada por Objetos
+1. Tipos de Datos
+2. Constructores
+3. Referencias y NULL
+4. Enums
+5. Inmutabilidad
 
 ## Java
 
