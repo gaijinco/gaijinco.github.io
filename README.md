@@ -95,6 +95,11 @@ Las sesiones pueden ser virtuales pero se recomienda tratar de hacer al menos tr
 - JUnit: Es un framework para ejecutar [pruebas unitarias](https://es.wikipedia.org/wiki/Prueba_unitaria) en Java. Si bien hay otras herramientas para pruebas unitarias, JUnit es el estándar de facto en la industria con excelente soporte en el ecosistema.
 - IDE: Ambiente Integrado de Desarrolo, IDE por sus siglas en inglés. Es un programa que permite tener todas las herramientas necesarias para el desarrollo de un programa como escritura, manejo de dependencias, ejecución, validación, despliege, etc. Hay varias opciones pero la opción que consume menos recursos es [Eclipse](https://eclipseide.org/)
 
+## Contribuciones
+Las contribuciones son bienvenidas y muy apreciadas. Puedes hacerlo de dos maneras:
+1. Crear un _pull request_
+2. Crear un _issue_ y usar el _tag_ de mejoras
+
 ## Material
 
 * [Material Escrito](https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
