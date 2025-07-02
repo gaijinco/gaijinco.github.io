@@ -98,7 +98,7 @@ Las sesiones pueden ser virtuales pero se recomienda tratar de hacer al menos tr
 ## Contribuciones
 Las contribuciones son bienvenidas y muy apreciadas. Puedes hacerlo de dos maneras:
 1. Crear un _pull request_
-2. Crear un _issue_ y usar el _tag_ de mejoras
+2. Crear un _issue_ y usar el _tag_ de _enhancement_
 
 ## Material
 
