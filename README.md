@@ -90,7 +90,12 @@ Las sesiones pueden ser virtuales pero se recomienda tratar de hacer al menos tr
 4. ¿Se debe impedir el uso de IA?
    - El Bootcamp debería ser un reflejo de la industria. Hay que enseñar y aconsejar en su uso correcto.
 
+## Referencias
+- JShell: Es una herramienta que corre en la terminal del computador y funciona como un REPL un entorno interactivo que permite a los usuarios escribir código, ejecutarlo y ver los resultados de forma inmediata. Viene con todas las versiones posteriores a la 10.
+- JUnit: Es un framework para ejecutar [pruebas unitarias](https://es.wikipedia.org/wiki/Prueba_unitaria) en Java. Si bien hay otras herramientas para pruebas unitarias, JUnit es el estándar de facto en la industria con excelente soporte en el ecosistema.
+- IDE: Ambiente Integrado de Desarrolo, IDE por sus siglas en inglés. Es un programa que permite tener todas las herramientas necesarias para el desarrollo de un programa como escritura, manejo de dependencias, ejecución, validación, despliege, etc. Hay varias opciones pero la opción que consume menos recursos es [Eclipse](https://eclipseide.org/)
+
 ## Material
 
-* [Materual Escrito](https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
+* [Material Escrito](https://github.com/gaijinco/gaijinco.github.io/blob/main/Fundamentos%20de%20Programacio%CC%81n%20v2024.12.07.pdf)
 * [Material en Video](https://www.youtube.com/watch?v=p3pKNBp0uZs&list=PLnoPakspmPo7ewFioN-CWY2weX7Djuhdy)
