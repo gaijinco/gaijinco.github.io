@@ -67,23 +67,28 @@ Después de la experiencia con el material, Java ha mostrado ser un lenguaje bas
 
 La manera recomendada para llevar el Bootcamp es:
 
-1. dos sesiones a la semana, una sesión teórica el lunes y una sesión práctica el miércoles.
-2. la sesión teórica no debe durar más de 2 horas.
-3. la sesión práctica debería durar más o menos de 1 hora y media.
-4. cuatro días de estudio autónomo por parte de los participantes.
-   - Sábado y Domingo: antes de la sesión anterior: el estudiante lee el material, mira el video de acompañamiento y contrasta con otros materiales (opcionalmente) al tiempo que escribe los ejemplos y toma notas. Esta actividad debe tomar.
-   - Lunes: participante atiende sesión teórica y puede preguntar aclaraciones.
-   - Martes: participante empieza a hacer los ejercicios y en la medida en que se encuentre con dudas, repasa el material. El estudiante debe hacer el intento de avanzar en los ejercicios.
-   - Miércoles: el grupo se divide en grupos de no más de 4 personas. Cada grupo discute hasta que ejercicio pudieron avanzar y discuten en grupo el primer ejercicio que no hayan podido resolver todos. Luego siguen con el siguiente, hasta completar la hora y media.
-   - Jueves: el participante es responsable de avanzar lo más que pueda en todos los ejercicios esenciales. Para hacerlo puede apoyarse en cualquier recurso, siempre y cuando el código final sea escrito por él mismo.
-   - Viernes: ninguna actividad recomendada.
-   - Sábado y Domingo: el participante revisa el siguiente tema.
-6. el uso de IA generativa es alentado, hay 2 situaciones que se deberían evitar:
-   - un estudiante no puede avanzar en un ejercicio, intenta pedir ayuda a los encargados del Bootcamp o a los demás participantes pero nadie le responde a tiempo. Finalmente alguien le contesta, pero el participante ya no está pendiente de los canales de ayuda. Un tiempo después, lee la respuesta que le dieron pero en ese momento ya no está frente a un computador. Cuando se sienta, avanza un poco más pero nuevamente necesita ayuda con algo y el ciclo se repite. Esto no permite que los participantes ganen confianza. La contraparte es que los organizadores estén muy pendientes de los canales de ayuda para contestar lo antes posible lo que es injusto con su tiempo libre si el grupo de participantes es medianamente grande.
-   - un estudiante pregunta algo y recibe ayuda. Nuevamente pregunta algo y recibe ayuda. En algún momento antes de hacer una nueva pregunta, duda y siente que otra pregunta lo expondrá demasiado. Prefiere guardar silencio y golpearse con la pared tratando de encontrar su respuesta.
-   El problema de la IA generativa es que el participante pida que la IA escriba el código, pero preguntar por un error de compilación o por un error de implementación puede ayudar con las 2 situaciones anteriores.
-   Se recomienda a los participantes que si definitivamente no saben cómo comenzar, pueden preguntar a la IA, copiar el código verlo funcionar y eliminarlo inmediatamente para que el participante intente escribirlo. Si el participante se encuentra estancado una vez más, puede ver la respuesta nuevamente. Una vez que compruebe que funciona, volver a eliminarlo. La idea es que el participante no continúe hasta que sea capaz de escribir el código sin leer la respuesta.
-7. las sesiones pueden ser virtuales, pero se recomienda al menos hacer 3 sesiones presenciales: la sesión inicial para hablar de la metodología del Bootcamp y la instalación de Java, una sesión intermedia, posiblemente para ayudar con la instalación de un IDE y la sesión de cierre del Bootcamp. Esto ayuda a que el grupo se sienta un poco más cercano.
+1. Los estudiantes tienen acceso al material completo por escrito y en video desde antes de iniciar.
+2. Dos sesiones a la semana, una sesión teórica al inicio de la semana y una sesión práctica a la mitad.
+   - La sesión teórica debe durar entre 1 y 2 horas y consiste en explicar en vivo los temas principales del siguiente capítulo del material.
+   - La sesión práctica debería durar más o menos 1 hora y consiste en que grupos de no más de 4 personas se apoyen para resolver algunos de los ejercicios propuestos.
+3. Además de las sesiones del Bootcamp el participante se compromete a 4 días de estudio autónomo
+   - Antes de la sesión práctica el estudiante ya ha leído y/o visto el material correspondiente.
+   - Entre la sesión práctica y la teórica repasa e intenta hacer algunos ejercicios.
+   - Después de la sesión práctica termina todos los ejercicios esenciales.
+4. Solo los estudiantes que hayan entregado todos los ejercicios esenciales pueden asistir a las siguientes sesiones.
+
+Las sesiones pueden ser virtuales pero se recomienda tratar de hacer al menos tres presenciales en el curso del Bootcamp: la sesión inicial, una sesión intermedia posiblemente para ayudar con la instalación de un IDE y la sesión de cierre.
+
+## Preguntas Frecuentes
+
+1. ¿No es un Bootcamp muy intesivo?
+   - El Bootcamp ha demostrado ser eficiente teniendo un balance entre el tiempo que deben dedicar el equipo organizador y su tiempo voluntario, y un tiempo prudente para que los participantes sean exitosos.
+2. ¿Vale la pena estudiar programación hoy en día?
+   - La programación es una herramienta útil aún si no se trabaja en la industria. Igualmente, la evidencia actual sugiere que la industria aún necesita programdores de todos los niveles.
+3. ¿Cómo evitar que los estudiantes entreguen ejercicios hechos por IA?
+   - La labor del equipo organizador no debe ser evitar que los participantes hagan trampa, lo que deben hacer es acompañar el aprendizaje de los participantes que quieren aprender.
+4. ¿Se debe impedir el uso de IA?
+   - El Bootcamp debería ser un reflejo de la industria. Hay que enseñar y aconsejar en su uso correcto.
 
 ## Material
 
