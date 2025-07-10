@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java - Funciones</title>
+</head>
+<link rel="stylesheet" href="css/main.css">
+<!-- Prism core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+<!-- Line numbers plugin CSS -->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" />
+<!-- Prism core JS -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<!-- Java language component -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+<!-- Line numbers plugin JS -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+<style>
+    
+
+</style>
+<body>
+    <main>
+        <h1>¡Hola Mundo!</h1>
+        <p>Las <strong>funciones</strong> son un concepto fundacional en la programación. T an importantes son que vale la pena que sean lo primero que aprendamos.</p>
+        <p>Una función toma unos parámetros o input y produce un valor de retorno o output. Los pasos que se siguen para esa transformación reciben el nombre de <strong>algoritmo</strong>.</p>
+        <p>Ejemplos sencillos de una función son:</p>
+
+        <ul>
+          <li>Un procedimiento que calcule el precio que el consumidor debe pagar, teniendo como <em>input</em> el precio base y el valor del impuesto a cobrar, y como <em>output</em> el precio final.</li>
+          <li>Un procedimiento que devuelva sinónimos de una palabra, teniendo como <em>input</em> la palabra que nos interesa, y como <em>output</em> una lista de palabras.</li>
+          <li>Un procedimiento que indique si un año es bisiesto, teniendo como <em>input</em> el número del año y como output un predicado verdadero si es bisiesto o falso en caso contrario.</li>
+          <li>Una función que resuelva una sopa de letras, teniendo como <em>input</em> una cuadrícula cuadrada con letras mayúsculas y una lista de palabras a buscar, y como <em>output</em> una sopa de letras donde las palabras de la lista aparezcan destacadas.</li>
+        </ul>
+
+        <p>Los algoritmos son secuenciales, llevamos a cabo un primer paso antes de llevar a cabo un segundo paso, etc. hasta que finalmente somos capaces de devolver el output esperado.</p>
+        <p>Veamos una función muy sencilla:</p>
+
+        <figure class="code-block">
+          <figcaption>Código 1 - ¡Hola Mundo!</figcaption>
+        <pre class="line-numbers"><code class="language-java">String saludos() {
+  return "¡Hola Mundo!";
+}</code></pre>
+        </figure>
+
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; saludos();</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>¡Hola Mundo!</code></pre>
+            </div>
+        </div>
+
+        <p>¡Has escrito tu primera función! Felicitaciones.</p>
+
+        <p>El Código 1 muestra una <strong>función</strong> en Java que retorna una cadena de caracteres, llamadas String, en este caso "Hola Mundo".</p>
+
+        <aside class="aside-box note">
+            <div class="icon"></div>
+            <div class="content">
+                <p>El libro "The C Programming Language", de 1978, escrito por Dennis Ritchie y Brian Kernighan, es considerado uno de los libros más influyentes en nuestra industria. El primer ejemplo de código en ese libro
+                    es un programa que imprime "¡Hola mundo!" en la pantalla y se ha vuelto costumbre que todos los tutoriales de programación hagan lo mismo. Esta referencia ha entrado en la cultura popular e incluso se ha 
+                    convertido en sinónimo de dar un ejemplo con los elementos más simples de un concepto.</p>
+            </div>
+        </aside>
+
+        <p>La línea 01 tiene 3 aspectos importantes de todas las funciones, en orden:</p>
+
+        <ol>
+          <li><strong>Valor de retorno</strong> u <strong>output</strong>, en nuestro ejemplo String. El valor de retorno es importante para saber qué vamos a obtener después de llamar a nuestra función.</li>
+          <li>El <strong>identificador</strong> de la función, en nuestro caso saludos. El identificador es importante para poder distinguir las diferentes funciones que tengamos.</li>
+          <li>Y los <strong>parámetros</strong> o <strong>input</strong>, que siempre están entre paréntesis, "(" y ")". En este caso no hay parámetros, nuestra función siempre va a retornar el mismo valor.</li>
+        </ol>
+
+        <p>Estos 3 elementos se llaman la <strong>firma</strong> de una función.</p>
+
+        <p>Al final de la línea 01 encontramos una llave de apertura "{" y en la línea 03 encontramos una llave de cierre "}", ellas forman un <strong>bloque</strong>. Los bloques nos ayudan a agrupar las instrucciones de nuestra función y de esta forma reconocer rápidamente una instrucción a qué función pertenece.</p>
+
+        <p>La línea 02 tiene una <strong>sentencia</strong> fácilmente identificable por el punto y coma, ";", al final. En este caso es una <strong>sentencia return</strong>, indicada por la palabra clave return usada en ella, que nos indica cuál es el output de la función. T oda función debe terminar en una sentencia return implícita o explícita. Luego viene un String, indicado por comillas dobles ", que rodean la cadena de caracteres "¡Hola Mundo!".</p>
+
+        <p>Leyendo el código podemos ver que al llamar la función saludos() obtendremos la cadena de caracteres "¡Hola Mundo!"</p>
+
+        <p>Esta es una de las funciones más simples que podemos hacer, con el pasar de los capítulos iremos aprendiendo cómo hacer funciones más complejas.</p>
+
+        <p>Revisemos cada concepto en más detalle.</p>
+
+        <dl>
+          <dt><strong>Valor de Retorno</strong></dt>
+          <dd>El valor de retorno del código 01 es String, que representa una cadena de caracteres. Sin embargo las funciones pueden retornar otros tipos de datos, como números, fechas o incluso tipos de datos que nosotros mismos definamos.</dd>
+          <dt><strong>Identificadores</strong></dt>
+          <dd>El identificador del código 01 es &lt;saludos&gt;. El uso de un buen identificador es muy importante para nuestra capacidad de entender el código que nosotros escribimos o que escriben otras personas. Sin embargo no todos los identificadores son válidos, hay unas reglas básicas. Aquí las más importantes:</dd>
+        </dl>
+
+        <table class="identifier-table">
+          <thead>
+            <tr>
+              <th>Identificador</th>
+              <th>¿Válido?</th>
+              <th>Explicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>mi saludo maravilloso</code></td>
+              <td class="invalid">❌</td>
+              <td>Los identificadores no pueden tener espacios.</td>
+            </tr>
+            <tr>
+              <td><code>101saludos</code></td>
+              <td class="invalid">❌</td>
+              <td>Los identificadores pueden tener números, pero no pueden empezar con ellos.</td>
+            </tr>
+            <tr>
+              <td><code>SopaDeLetras</code></td>
+              <td class="valid">✅</td>
+              <td>Los identificadores pueden llevar mayúsculas y minúsculas.</td>
+            </tr>
+            <tr>
+              <td><code>CONSTANTE_GRAVITACIONAL</code></td>
+              <td class="valid">✅</td>
+              <td>Los identificadores pueden usar "_", por ejemplo para separar palabras en mayúsculas.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <aside class="aside-box error">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Si usas un identificador que no sea válido, tu programa no va a compilar y a veces tendrá un mensaje un poco críptico. Afortunadamente hay una manera sencilla de evitar estos errores: evita los espacios y los números como caracteres iniciales, lo demás es un poco intuitivo.</p>
+            </div>
+        </aside>
+
+        <aside class="aside-box error">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Las mayúsculas y minúsculas son importantes en los identificadores que uses. Una función que se llama saludos es diferente de una que se llame Saludos. Si no usas el identificador exacto de una función obtendrás un error de compilación.</p>
+            </div>
+        </aside>
+
+        <aside class="aside-box info">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Hay algunas convenciones en el mundo de la programación que conviene seguir. La más usada en lenguajes como Java es el uso de <em>Camel Case</em>: Escribe primordialmente en minúsculas pero si un identificador usa más de una palabra entonces haz que la letra inicial esté en mayúsculas. Algunos ejemplos serían: SopaDeLetras, miSaludo, unIdentificadorMuyLargo, etc. Si además la primera letra es también mayúscula se llama <em>Uppercase Camel Case</em>, sino se llama <em>Lowercase Camel Case</em>. En Java la convención es que las funciones y las variables utilicen <em>Lowercase Camel Case</em>.</p>
+            </div>
+        </aside>
+
+        <dl>
+          <dt><strong>Parámetros</strong></dt>
+          <dd>Los parámetros siempre van después del identificador de una función y van entre paréntesis. Si no hay nada entre los paréntesis es porque la función no tiene parámetros. Las funciones sin parámetros suelen ser poco comunes, pero a veces son útiles. Pronto veremos funciones con parámetros.</dd>
+          <dt><strong>Bloques</strong></dt>
+          <dd>En el código 01, vemos un <strong>bloque</strong> delimitado por las llaves, la de apertura en la línea 01 y la de cierre en la línea 03. Un bloque siempre es una manera de agrupar elementos de nuestro código. Si tenemos muchas líneas de código es importante poder entender rápidamente a dónde pertenecen. Por ejemplo la línea 02 sabemos que pertenece a la función saludos porque está definida dentro del bloque de esa función. Además de funciones, hay otros elementos que usan bloques y en todos cumplen la misma función: agrupar.</dd>
+        </dl>
+
+        <aside class="aside-box question">
+            <div class="icon"></div>
+            <div class="content">
+                <p>El uso de caracteres específicos no es la única manera en la que los lenguajes de programaciones agrupan cosas. He aquí 2 ejemplos adicionales de cómo lo hacen, el primero en el lenguaje Python y el segundo en Basic:</p>
+                <p><pre><code>def saludos() :
+   return “¡Hola Mundo!”</code></pre></p>
+                <p><pre><code>Function saludos()
+   return “Hello World!”
+ End Function</code></pre></p>
+                <p>En el primer ejemplo, se utilizan los niveles de tabulación, un elemento pertenece al elemento que tiene un nivel menos de tabulación. En el segundo, en vez de utilizar un caracter arbitrario, se utilizan palabras en inglés para indicar el inicio y el fin de un elemento.</p>
+                <p>¿Cuáles crees que son las ventajas y desventajas de los 3 métodos?</p>
+            </div>
+        </aside>
+
+        <dl>
+          <dt><strong>Sentencias</strong></dt>
+          <dd>Finalmente en la línea 02 hay una sentencia. Una sentencia indica una instrucción que se le da al computador. Una sentencia siempre termina en ";".</dd>
+          <dt><strong>Bloques</strong></dt>
+          <dd>En el código 01, vemos un <strong>bloque</strong> delimitado por las llaves, la de apertura en la línea 01 y la de cierre en la línea 03. Un bloque siempre es una manera de agrupar elementos de nuestro código. Si tenemos muchas líneas de código es importante poder entender rápidamente a dónde pertenecen. Por ejemplo la línea 02 sabemos que pertenece a la función saludos porque está definida dentro del bloque de esa función. Además de funciones, hay otros elementos que usan bloques y en todos cumplen la misma función: agrupar.</dd>
+        </dl>
+
+        <p>Todas las funciones deben terminar en una sentencia return, es decir una sentencia que inicia con la palabra clave <strong>return</strong>. Una sentencia return indica el valor que se va a retornar una vez que la función termina de ser ejecutada. En la función &lt;saludos&gt; siempre retornamos la misma cadena de caracteres: "¡Hola Mundo!"</p>
+
+        <p>Pronto escribiremos funciones más complejas. Las funciones pueden tener múltiples sentencias, cada una haciendo un paso intermedio para calcular el valor final. Lo más importante a tener en cuenta es que una función se ejecuta una línea a la vez, en el orden que aparecen.</p>
+
+        <aside class="aside-box error">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Uno de los errores más comunes al aprender a programar en Java es olvidar poner el ";" al final de una sentencia. ¡No olvides tus ";"!</p>
+            </div>
+        </aside>
+
+        <aside class="aside-box note">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Los ";" son importantes porque permiten al compilador identificar dóndetermina una sentencia, de igual manera que los humanos necesitamos un "." para saber dónde termina una oración. Hay otros lenguajes que usan el caracter de final de línea para indicar el final de una sentencia. Por lo que no se puede poner más una sentencia por línea de código, algo que antes los programadores veían como inconveniente aunque hoy en día es mucho más aceptado. Por lo tanto los lenguajes deben tomar una decisión: permitir más de una sentencia por línea, necesitando un caracter como ";" para separarlas, o permitir una sola sentencia por línea y no usar ningún delimitador.</p>
+            </div>
+        </aside>
+
+        <aside class="aside-box idea">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Históricamente las funciones se han asociado a la reutilización de código, pero, el verdadero poder de las funciones vienen de la legibilidad que agregan a nuestro código. Asignando un nombre a un algoritmo hacemos nuestro código más fácil de entender. Deberías siempre escribir una función incluso si no esperas reusarla.</p>
+                <p>La reutilización es un bono adicional a la legibilidad.</p>
+            </div>
+        </aside>
+
+        <h2>¡Hola Mundo! ¡Hola Java!</h2>
+
+        <figure class="code-block">
+          <figcaption>Código 2 - saludos() con parámetros</figcaption>
+            <pre class="line-numbers"><code class="language-java">String saludosPara(String quien) {
+  return String.format("¡Hola %s!", quien);
+}</code></pre>
+        </figure>
+
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; saludosPara("Mundo");
+ &gt; saludosPara("Java")</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>¡Hola Mundo!
+ ¡Hola Java!</code></pre>
+            </div>
+        </div>
+
+        <p>La función saludosPara() es muy similar a la función saludos() pero ahora tiene un parámetro. Un parámetro agrega flexibilidad a una función, dado que una función sin parámetros retornaría siempre el mismo valor. ¿Qué sucede si queremos saludar, no solo al mundo, sino a otras personas o cosas? ¡Parámetros al rescate!</p>
+
+        <p>En la línea 01 se define un parámetro dentro de los paréntesis. Un parámetro tiene 2 partes: un tipo de dato, como lo tienen los valores de retorno, y un identificador. Para el Código 02 el parámetro también es un String y decidimos usar el identificador "quien" para ayudar a recordar el papel que tiene dentro de la función. Podríamos haber usado cualquier identificador y la función seguiría retornando el valor esperado, pero usar un buen identificador hace que nuestro código sea más legible.</p>
+
+        <aside class="aside-box warning">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Vas a escuchar que en muchos lugares vamos a hablar sobre cómo algunas recomendaciones hacen el código más legible. ¿Si una máquina va a ejecutar el código, por qué nos preocupamos por que sea legible para un humano? Antes de que un código sea ejecutado, los humanos tienen que leerlo y entenderlo para poder corregir errores en ellos, para poder extenderlos e incluso para aprender de ellos. De hecho es algo que hace unos años no se mencionaba en la industria y había una cierta mentalidad de que escribir código críptico era chévere porque las personas se sentían orgullosas de entender código que otros no podían. Pero lo malo es que esas mismas personas olvidaban rápidamente la razón por la cuál su código críptico funcionaba. Trata de dedicar un poco de tiempo a pensar un buen identificador para los elementos de tu código. Es difícil hacerlo y quizás no te salga en tu primer intento pero no te sientas desalentado, con la práctica se vuelve más sencillo.</p>
+            </div>
+        </aside>
+
+        <p>Una función puede tener varios parámetros, separados por comas, y de cualquier tipo. Por ahora solo usaremos Strings porque son fáciles de usar y de hecho son bastante importantes en la programación.</p>
+
+        <p>La línea 02 usa la función String.format(), ¿de dónde salió? Resulta que todos los lenguajes de programación incluyen una librería estándar con funciones generales. De esta manera sin haber escrito una línea de código, ya tienes la capacidad de hacer muchas cosas.</p>
+
+        <aside class="aside-box idea">
+            <div class="icon"></div>
+            <div class="content">
+                <p>"No reinventar la rueda" es una frase muy común en programación. Es muy importante conocer la librería estándar del lenguaje de programación que utilices porque te hará más eficiente en el código que escribas.</p>
+            </div>
+        </aside>
+
+        <p>String.format() permite crear una cadena de caracteres combinando diferentes partes. La función necesita al menos 2 parámetros: un formato y un argumento. En este caso tenemos un formato de saludo y tenemos a quien queremos saludar. El formato necesita un marcador de posición para saber cómo formar el String resultante, en String.format() este es "%s". La función va a tomar los argumentos y va a ir reemplazando los marcadores de posición con ellos.</p>
+
+        <p>Podemos pensar la ejecución de saludosPara() en 3 reemplazos:</p>
+
+        <ol>
+          <li>saludosPara("Mundo")</li>
+          <li>String.format("¡Hola %s!")</li>
+          <li>"¡Hola Mundo!"</li>
+        </ol>
+
+        <p>Si utilizamos diferentes argumentos, "Java" en vez de "Mundo", obtendremos diferentes saludos. Ahora podemos crear cualquier tipo de saludo que necesitemos.</p>
+
+        <aside class="aside-box error">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Invocar una función con menos o más argumentos que su número de parámetros es un error de compilación. Adicionalmente usar un argumento de diferente tipo también es error de compilación, por ejemplo no pasar un String cuando el parámetro esperado es un String.</p>
+            </div>
+        </aside>
+
+        <p>¡Genial! Ya podemos crear saludos a todo lo que se nos ocurra.</p>
+
+        <aside class="aside-box info">
+            <div class="icon"></div>
+            <div class="content">
+                <p>La documentación oficial de String.format() está <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)">aquí</a>.</p>
+                <p>Puede parecer un poco desalentador leer ahora, pero sentirse cómodo leyendo documentación oficial es una habilidad muy importante que sería bueno empezar a practicar. ¡No importa tus años de experiencia, leer la documentación oficial es algo que seguirás haciendo!</p>
+            </div>
+        </aside>
+
+        <h2>¡Hola Mundo! version 2.0</h2>
+
+        <figure class="code-block">
+          <figcaption>Código 3 - ¡Hola Mundo! 2.0</figcaption>
+            <pre class="line-numbers"><code class="language-java">String saludosPara(String quien) {
+  return String.format("¡Hola %s!", quien);
+}
+
+String saludos() {
+  return saludosPara("Mundo");
+}</code></pre>
+        </figure>
+
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; saludos();
+ &gt; saludosPara("Mundo")</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>¡Hola Mundo!
+ ¡Hola Mundo!</code></pre>
+            </div>
+        </div>
+
+        <p>Cuando escribimos la función saludosPara() ¿no se te hizo algo familiar? De alguna manera podemos ver como saludos() y saludosPara() tienen alguna similitud. De hecho si lo piensas bien, ¡saludos() es una versión específica de saludosPara()! Es una versión de saludosPara() que siempre saluda al Mundo.</p>
+
+        <p>Esta relación la podemos poner de manifiesto en el código, y lo que podemos hacer es invocar a la función saludosPara() dentro de saludos(). Esto es una manera de reutilización de código que es una muy buena práctica y una muy importante en programación, de hecho antes hemos visto que tiene un lema “No reinventar la rueda”. Y de una manera anexa, también es una manera de reducir la repetición en nuestro código que es igualmente una muy importante práctica.</p>
+
+        <aside class="aside-box idea">
+            <div class="icon"></div>
+            <div class="content">
+                <p>DRY es una sigla para Don't Repeat your Code. Si tenemos repetición en nuestro código, cuando queramos ampliarlo o corregirlo tenemos que tener cuidado de hacer los cambios en todas las partes. Si olvidamos hacerlo entonces tendremos un sistema inconsistente y a veces eso genera errores sutiles difíciles de encontrar. Al evitar la repetición nos aseguramos de evitar este tipo de problemas.</p>
+            </div>
+        </aside>
+
+        <p>Con el Código 03, si más adelante queremos cambiar el formato del saludo, entonces solo tendremos un lugar donde hacer el cambio, pero ambas funciones verán el cambio.</p>
+
+        <p>El Código 03 también nos reitera que dentro de una función podemos usar funciones dentro de funciones incluso las que hemos definido nosotros. No solo es permitido sino que es algo que debemos fomentar. En un sentido, la programación trata de hacer pequeñas partes y después usar esas pequeñas para crear partes más complejas.</p>
+
+        <p>Es muy importante que empieces a ejercitar el hábito de escribir pequeñas funciones y utilizarlas como partes de otra función. Lo inverso es también importante, si vas a crear una función, piensa cómo puedes dividir el algoritmo en partes más pequeñas y escribir una función para cada una.</p>
+
+        <aside class="aside-box idea">
+            <div class="icon"></div>
+            <div class="content">
+                <p>Cuando estés escribiendo una función, piensa en cómo puedes implementarla en términos de funciones más pequeñas. Esto te dará la oportunidad de reutilizarlas más adelante además hará que tus funciones sean más fáciles de leer y de probar.</p>
+            </div>
+        </aside>
+
+        <h2>Espacio en blanco</h2>
+        <figure class="code-block">
+          <figcaption>Código 4 - saludosPara() con mucho espacio en blanco</figcaption>
+            <pre class="line-numbers"><code class="language-java">String saludosPara
+(String quien) 
+{
+      return String.format("¡Hola %s!", quien);
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption>Código 5 - saludosPara() con no mucho espacio en blanco</figcaption>
+            <pre class="line-numbers"><code class="language-java">String saludosPara(String quien){return String.format("¡Hola %s!", quien);}</code></pre>
+        </figure>
+        <p>El espacio en blanco es cualquier caracter que parezca un espacio, esto incluye espacios, tabulaciones y saltos en línea. El espacio en blanco no tiene ninguna afectación en el funcionamiento de una función, es netamente una opción para mejorar la legibilidad para los seres humanos. Cuánto espacio en blanco es el exacto para mejorar la legibilidad de un código es una cuestión subjetiva, pero parece claro que el Código 04 tiene mucho y el Código 05 tiene muy poco. Por lo tanto, busca escribir código con una cantidad de espacio en blanco que esté entre esos dos estilos, pero sobre todo no temas agregar un poco de espacio en blanco para darle espacio a respirar a los elementos que componen una sentencia para hacerlos más fáciles de entender.</p>
+        <aside class="aside-box idea">
+          <div class="icon"></div>
+          <div class="content">
+              <p>Después de escribir una función, dale un vistazo y mira si se siente densa. En caso de duda, pide una segunda opinión. Agrega un poco de espacio en blanco para hacerla más sencilla a los ojos.</p>
+          </div>
+        </aside>
+
+        <h2>Comentarios</h2>
+        <figure class="code-block">
+          <figcaption>Código 6 - Comentarios</figcaption>
+            <pre class="line-numbers"><code class="language-java">String saludosPara(String quien) {
+  return String.format("¡Hola Mundo!" ,quien);
+}
+
+String saludos() {
+  return saludosPara("Mundo!"); // evitar repetición
+}</code></pre>
+        </figure>
+        <p>La línea 06 tiene un comentario de una sola línea, empieza con “//” y termina en el siguiente salto de línea. Los comentarios son ignorados por el compilador, son realmente para dejar notas para las personas que puedan leer el código.</p>
+        <p>Dejar notas en tu código puede ayudar a que sea más fácil de entender. Pero ten cuidado de que el comentario no se desactualice si cambias el código.</p>
+        <aside class="aside-box info">
+          <div class="icon"></div>
+          <div class="content">
+              <p>También existen los comentarios de múltiples líneas, que empiezan con /* y terminan con */ y como su nombre lo indica pueden englobar múltiples líneas. No es necesario, pero tiende a usarse, que cada línea intermedia empiece con un * para darle un aspecto estético. Este es un comentario de múltiples líneas:</p>
+              <pre class="line-numbers"><code class="language-java">/*
+ * Este es un comentario de múltiples líneas
+ */</code></pre>
+              <p>Los comentarios de una sola línea son usualmente preferidos porque es muy sencillo comentar mucho código, y después descomentar partes de él. Sin embargo es importante conocerlos porque los vas a encontrar en muchas partes.</p>
+          </div>
+        </aside>
+
+        <h2>Ejercicios</h2>
+        <h3>Errores del compilador y ejecución</h3>
+        <p>Escribe los siguientes códigos, lee el error que te devuelve el compilador o el ambiente de ejecución. Después escribe el código correcto de modo que al ejecutarlo ya no salgan errores.</p>
+        <figure class="code-block">
+          <figcaption><strong>E1.1</strong></figcaption>
+            <pre><code class="language-java">err() {
+  return "¿Dónde está el error?";
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption><strong>E1.2</strong></figcaption>
+            <pre><code class="language-java">string err2() {
+  return "¿String o string?";
+}</code></pre>
+        <figure class="code-block">
+          <figcaption><strong>E1.3</strong></figcaption>
+            <pre><code class="language-java">String err3(quien) {
+  return String.format("%s, ¿cuál es el error?¿String o string?", quien);
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption><strong>E1.4</strong></figcaption>
+            <pre><code class="language-java">String err4() {
+  return "Este es un error sutil"
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption><strong>E1.5</strong></figcaption>
+            <pre><code class="language-java">String err5() {
+  "Este es un poco menos sutil";
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption><strong>E1.5</strong></figcaption>
+            <pre><code class="language-java">String err6 {
+  return "¡Hola Error!";
+}</code></pre>
+        </figure>
+        <figure class="code-block">
+          <figcaption><strong>E1.7</strong></figcaption>
+            <pre><code class="language-java">String err7(String quien) {
+  return format("%s ¿Un poco mañoso, no?", quien);
+}</code></pre>
+        </figure>
+      </main>
+</body>
+</html>
