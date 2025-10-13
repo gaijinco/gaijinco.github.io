@@ -54,7 +54,6 @@ pre, code {
 }
 
 code {
-  padding: 0.2em 0.4em;
   font-size: 0.95em;
 }
 
@@ -245,4 +244,8 @@ figure.code-block pre {
 
 pre[class*="language-"] {
   background-color: #f9f9f9;
+}
+
+.fill-in {
+  background-color: #e1fb71;
 }

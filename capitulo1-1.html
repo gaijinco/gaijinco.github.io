@@ -6,26 +6,22 @@
     <title>Java - Funciones</title>
 </head>
 <link rel="stylesheet" href="css/main.css">
-<!-- Prism core CSS -->
 <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
-<!-- Line numbers plugin CSS -->
 <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" />
-<!-- Prism core JS -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-<!-- Java language component -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
-<!-- Line numbers plugin JS -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
-<style>
-    
-
-</style>
 <body>
     <main>
         <h1>¡Hola Mundo!</h1>
-        <p>Las <strong>funciones</strong> son un concepto fundacional en la programación. T an importantes son que vale la pena que sean lo primero que aprendamos.</p>
+        <p>Las <strong>funciones</strong> son un concepto fundacional en la programación. Tan importantes son que vale la pena que sean lo primero que aprendamos.</p>
         <p>Una función toma unos parámetros o input y produce un valor de retorno o output. Los pasos que se siguen para esa transformación reciben el nombre de <strong>algoritmo</strong>.</p>
+
+<img src="img/Hola mundo 1.png"/>
+
+
+
         <p>Ejemplos sencillos de una función son:</p>
 
         <ul>
@@ -34,6 +30,8 @@
           <li>Un procedimiento que indique si un año es bisiesto, teniendo como <em>input</em> el número del año y como output un predicado verdadero si es bisiesto o falso en caso contrario.</li>
           <li>Una función que resuelva una sopa de letras, teniendo como <em>input</em> una cuadrícula cuadrada con letras mayúsculas y una lista de palabras a buscar, y como <em>output</em> una sopa de letras donde las palabras de la lista aparezcan destacadas.</li>
         </ul>
+
+<img src="img/Hola mundo 2.png"/>
 
         <p>Los algoritmos son secuenciales, llevamos a cabo un primer paso antes de llevar a cabo un segundo paso, etc. hasta que finalmente somos capaces de devolver el output esperado.</p>
         <p>Veamos una función muy sencilla:</p>
@@ -415,6 +413,117 @@ String saludos() {
   return format("%s ¿Un poco mañoso, no?", quien);
 }</code></pre>
         </figure>
+        <h3>Ejercicios de Codificación</h3>
+
+        <article>
+        <p><strong>E1.7</strong>: Llena los huecos para crear una función que dados 3 Strings que sean emojis, los devuelva en formato "[%s, %s, %s]" por ejemplo al invocar la función así: adivinaLaPelicula("❄","🛳","💑"), retornaría "[❄, 🛳, 💑]". Para cada hueco con una letra, escoge el reemplazo utilizando una de las opciones numeradas. Una vez que utilices una opción numerada ya no la puedes usar en otro reemplazo.</p>
+        <figure class="code-block">
+            <pre><code>String <span class="fill-in">_A_</span>(String emoji1<span class="fill-in">_B_</span> String emoji2<span class="fill-in">_C_</span> String emoji3) <span class="fill-in">_D_</span>
+  return <span class="fill-in">_E_</span>("[%s, %s, %s]"<span class="fill-in">_F_</span> emoji1<span class="fill-in">_G_</span> emogi2<span class="fill-in">_H_</span> emoji3);
+<span class="fill-in">_I_</span></code></pre>
+        </figure>
+        <ol>
+          <li><code>,</code></li>
+          <li><code>,</code></li>
+          <li><code>,</code></li>
+          <li><code>,</code></li>
+          <li><code>,</code></li>
+          <li><code>}</code></li>
+          <li><code>{</code></li>
+          <li><code>adivinaLaPelicula</code></li>
+          <li><code>String.format</code></li>
+        </ol>
+        </article>
+
+        <article>
+        <p><strong>E1.8</strong>: Llena los huecos, para crear una función que concatene la cadena "こんにちは" (hola en japonés) y un parámetro dado. Para cada hueco con una letra, escoge el reemplazo utilizando una de las opciones numeradas. Una vez que utilices una opción numerada ya no la puedes usar en otro reemplazo.</p>
+        <figure class="code-block">
+            <pre><code><span class="fill-in">_A_</span> <span class="fill-in">_B_</span> {
+  _C_ String.format("こんにちは_D_", _E_)_F_
+}</code></pre>
+        </figure>
+        <ol>
+          <li><code>return</code></li>
+          <li><code>;</code></li>
+          <li><code>dare</code></li>
+          <li><code>konnichiwa(String dare)</code></li>
+          <li><code>%s</code></li>
+          <li><code>String</code></li>
+        </ol>
+        </article>
+
+        <article>
+        <p><strong>E1.9</strong>: Escribe una función separador() que retorne el String "&lt;&lt;&lt;&gt;&gt;&gt;"</p>
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; separador()</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>&lt;&lt;&lt;&gt;&gt;&gt;</code></pre>
+            </div>
+        </div>
+        </article>
+
+        <article>
+        <p><strong>E1.10</strong>: Escribe una función vocales() que retorne el String "aeiou"</p>
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; vocales()</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>aeiou</code></pre>
+            </div>
+        </div>
+        </article>
+
+        <article>
+        <p><strong>E1.11</strong>: Escribe una función títuloAdornado() que tome un String como parámetro y retorne el mismo String precedido por "&lt;&lt;&lt; " y antecedido por " &gt;&gt;&gt;"</p>
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; títuloAdornado("Java")
+&gt; títuloAdornado("&gt;&gt;&gt; &lt;&lt;&lt;")
+&gt; títuloAdornado("A + B")</code></pre>
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>"&lt;&lt;&lt; Java &gt;&gt;&gt;""
+"&lt;&lt;&lt; &gt;&gt;&gt; &lt;&lt;&lt; &gt;&gt;&gt;"
+"&lt;&lt;&lt; A + B &gt;&gt;&gt;"</code></pre>
+            </div>
+        </div>
+        </article>
+
+        <h3>Ejercicios de Corrección de Código</h3>
+
+        <p>Para estos problemas, mira los ejemplos de uso de una función y luego revisa el código inicial que no está funcionando como se espera. Ejecútalo y luego corrígelo para coincidir con los ejemplos.</p>
+
+        <article>
+        <p><strong>E1.12</strong>: Escribe una función títuloAdornado() que tome un String como parámetro y retorne el mismo String precedido por "&lt;&lt;&lt; " y antecedido por " &gt;&gt;&gt;"</p>
+        <div class="io-example">
+          <div class="input">
+            <div class="label">Input</div>
+              <pre><code>&gt; adornar("Java")
+&gt; adornar("Mundo")
+            </div>
+          <div class="output">
+            <div class="label">Output</div>
+              <pre><code>"&lt=Java=&gt;""
+"&lt;=Mundo=&gt;"
+            </div>
+        </div>
+        <figure class="code-block">
+          <figcaption><strong>E1.5</strong></figcaption>
+            <pre><code class="language-java">String adornar(String frase) {
+  return String.format("&lt;=s=&gt;, frase");
+}</code></pre>
+        </figure>
+        </article>
+
       </main>
 </body>
 </html>
